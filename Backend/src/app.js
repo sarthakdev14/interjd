@@ -7,7 +7,7 @@ const app = express()
 const allowedOrigins = ["https://interjd.vercel.app", "http://localhost:5173", "http://127.0.0.1:5173"]
 
 app.use(express.json())
-app.use(cookieParser())
+app.use(cookieParser())//nonno
 app.use((req, res, next) => {
     const origin = req.headers.origin
 
